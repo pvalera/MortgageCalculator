@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="index.js"> </script>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <h1> Mortgage Calculator </h1>
+  <p> </p>
+
+  <label for="loanBalance">Loan Balance</label>
+  <input id="loanBalance" type="number">
+  <p> </p>
+
+  <label for="interestRate">Interest Rate (%)</label>
+  <input id="interestRate" type="number">
+  <p> </p>
+
+  <label for="loanTerm">Loan Term (years)</label>
+  <input id="loanTerm" type="number">
+  <p> </p>
+
+  <label for="selectPeriod">Period</label>
+  <select class="selectPeriod" id="selectPeriod" selectPeriod="select">
+      <option value="Monthly"selected>Monthly</option>
+      <option value="Bimonthly">Bimonthly</option>
+  </select>
+  <p> </p>
+
+  <button class="buttonCalculate" id="calculate" onclick="clickCalculate()">Calculate</button>
+
+  <p class="results" id="results"></p>
+ </body>
+
+</html>
